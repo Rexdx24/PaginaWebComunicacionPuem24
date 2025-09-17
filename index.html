@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Prevención del Cáncer de Colon — Windows 98 style</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <!-- Sonidos -->
+  <audio id="sound-start" src="startup.wav"></audio>
+  <audio id="sound-click" src="click.wav"></audio>
+  <audio id="sound-close" src="close.wav"></audio>
+
+  <!-- Escritorio -->
+  <div class="desktop" id="desktop">
+    <div class="icon" data-app="concepto">
+      <img src="https://win98icons.alexmeub.com/icons/png/computer-5.png"/>
+      <div>Concepto</div>
+    </div>
+    <div class="icon" data-app="prevencion">
+      <img src="https://win98icons.alexmeub.com/icons/png/document-0.png"/>
+      <div>Prevención</div>
+    </div>
+    <div class="icon" data-app="receta">
+      <img src="https://win98icons.alexmeub.com/icons/png/notepad-2.png"/>
+      <div>Receta</div>
+    </div>
+    <div class="icon" data-app="recursos">
+      <img src="https://win98icons.alexmeub.com/icons/png/directory_closed-4.png"/>
+      <div>Recursos</div>
+    </div>
+    <div class="icon" data-app="cita">
+      <img src="https://win98icons.alexmeub.com/icons/png/camera-2.png"/>
+      <div>CITA</div>
+    </div>
+    <div class="icon" data-app="fuentes" style="position:fixed; bottom:60px; left:10px;">
+      <img src="https://win98icons.alexmeub.com/icons/png/help_book_cool-4.png"/>
+      <div>Fuentes</div>
+    </div>
+  </div>
+
+  <!-- Ventanas -->
+  <div class="window" id="win-concepto" style="left:80px;top:40px; height:420px;">
+    <div class="titlebar"><div class="title">Concepto</div><div class="controls"><div class="btn close">X</div></div></div>
+    <div class="content">
+      <h2>Concepto de Cáncer de Colon</h2>
+      <img class="content-img" src="https://www.redaccionmedica.com/images/enfermedades/cancer-colon.jpg" alt="Colon"/>
+      <p>El <strong>cáncer de colon</strong> es una enfermedad en la que células anormales en el colon o recto se multiplican sin control. Generalmente comienza con pólipos que, si no se detectan, pueden transformarse en tumores malignos.</p>
+      <ul>
+        <li>Cambios en los hábitos intestinales.</li>
+        <li>Sangrado rectal o heces oscuras.</li>
+        <li>Dolor abdominal persistente.</li>
+        <li>Pérdida de peso sin explicación.</li>
+      </ul>
+    </div>
+    <div class="statusbar">Información ampliada</div>
+  </div>
+
+  <div class="window" id="win-prevencion" style="left:120px;top:70px; height:420px;">
+    <div class="titlebar"><div class="title">Prevención</div><div class="controls"><div class="btn close">X</div></div></div>
+    <div class="content" style="padding:0;">
+      <iframe class="embedded-iframe" src="Paginaprevencion.html" title="Prevención - Cáncer de Colon"></iframe>
+    </div>
+    <div class="statusbar">Consejos de prevención</div>
+  </div>
+
+  <div class="window" id="win-receta" style="left:220px;top:110px; height:380px;">
+    <div class="titlebar"><div class="title">Receta Saludable</div><div class="controls"><div class="btn close">X</div></div></div>
+    <div class="content">
+      <h2>Ensalada de Quinoa</h2>
+      <img class="content-img" src="https://danzadefogones.com/wp-content/uploads/2024/08/ensalada-de-quinoa-facil.jpg" alt="Ensalada de quinoa"/>
+      <p>Una receta nutritiva, rica en fibra y antioxidantes.</p>
+      <h3>Ingredientes:</h3>
+      <ul>
+        <li>1 taza de quinoa cocida</li>
+        <li>1 pepino en cubos</li>
+        <li>2 tomates medianos</li>
+        <li>1 zanahoria rallada</li>
+      </ul>
+    </div>
+    <div class="statusbar">Receta ampliada</div>
+  </div>
+
+  <div class="window" id="win-recursos" style="left:320px;top:160px; height:360px;">
+    <div class="titlebar"><div class="title">Recursos</div><div class="controls"><div class="btn close">X</div></div></div>
+    <div class="content">
+      <h2>Recursos útiles</h2>
+      <img class="content-img" src="https://i.pinimg.com/736x/88/a7/1f/88a71f20286b494090606187260110f7.jpg" alt="Recursos"/>
+      <ul>
+        <li><a href="https://www.who.int" target="_blank">OMS</a></li>
+        <li><a href="https://www.cancer.org" target="_blank">American Cancer Society</a></li>
+        <li><a href="https://www.cdc.gov" target="_blank">CDC</a></li>
+      </ul>
+    </div>
+    <div class="statusbar">Enlaces oficiales</div>
+  </div>
+
+  <div class="window" id="win-cita" style="left:180px;top:200px; height:320px;">
+    <div class="titlebar"><div class="title">CITA</div><div class="controls"><div class="btn close">X</div></div></div>
+    <div class="content">
+      <video controls width="100%">
+        <source src="cita.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="statusbar">Video</div>
+  </div>
+
+  <div class="window" id="win-fuentes" style="left:400px;top:220px; height:300px;">
+    <div class="titlebar"><div class="title">Fuentes</div><div class="controls"><div class="btn close">X</div></div></div>
+    <div class="content">
+      <ul>
+        <li><a href="https://www.who.int" target="_blank">OMS</a></li>
+        <li><a href="https://www.cancer.org" target="_blank">American Cancer Society</a></li>
+        <li><a href="https://www.cdc.gov" target="_blank">CDC</a></li>
+        <li><a href="https://www.redaccionmedica.com" target="_blank">Redacción Médica</a></li>
+        <li><a href="https://danzadefogones.com" target="_blank">Danza de Fogones</a></li>
+      </ul>
+    </div>
+    <div class="statusbar">Referencias</div>
+  </div>
+
+  <!-- Barra de tareas -->
+  <div class="taskbar">
+    <div class="start" id="startBtn"> 
+      <img src="https://win98icons.alexmeub.com/icons/png/windows-0.png"/> 
+      <strong>Inicio</strong>
+    </div>
+    <div class="task-buttons" id="taskButtons"></div>
+    <div class="clock" id="clock">00:00</div>
+  </div>
+
+  <!-- Música de fondo -->
+  <iframe 
+    width="200" height="120" 
+    src="https://www.youtube.com/embed/AKlrIwKj0Do?autoplay=1&loop=1&playlist=AKlrIwKj0Do" 
+    frameborder="0" 
+    allow="autoplay" 
+    style="position:fixed; bottom:50px; right:10px; z-index:999;">
+  </iframe>
+
+  <script src="index.js"></script>
+</body>
+</html>
