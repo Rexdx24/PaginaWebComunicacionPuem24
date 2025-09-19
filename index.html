@@ -1,12 +1,13 @@
 <!doctype html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Prevención del Cáncer de Colon — Windows 98 style</title>
-  <link rel="stylesheet" href="index.css">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Prevención del Cáncer de Colon — Windows 98 style</title>
+<link rel="stylesheet" href="index.css" />
 </head>
 <body>
+
   <!-- Sonidos -->
   <audio id="sound-start" src="startup.wav"></audio>
   <audio id="sound-click" src="click.wav"></audio>
@@ -24,7 +25,7 @@
     </div>
     <div class="icon" data-app="receta">
       <img src="https://win98icons.alexmeub.com/icons/png/notepad-2.png"/>
-      <div>Receta</div>
+      <div>Recetas</div>
     </div>
     <div class="icon" data-app="recursos">
       <img src="https://win98icons.alexmeub.com/icons/png/directory_closed-4.png"/>
@@ -32,105 +33,145 @@
     </div>
     <div class="icon" data-app="cita">
       <img src="https://win98icons.alexmeub.com/icons/png/camera-2.png"/>
-      <div>CITA</div>
+      <div>Citas</div>
     </div>
     <div class="icon" data-app="fuentes" style="position:fixed; bottom:60px; left:10px;">
-      <img src="https://win98icons.alexmeub.com/icons/png/help_book_cool-4.png"/>
+      <img src="https://98.js.org/images/icons/internet-explorer-32x32.png"/>
       <div>Fuentes</div>
+    </div>
+    <div class="icon" data-app="flippingbook">
+      <img src="https://win98icons.alexmeub.com/icons/png/help_book_cool-4.png"/>
+      <div>Libro Virtual</div>
     </div>
   </div>
 
   <!-- Ventanas -->
-  <div class="window" id="win-concepto" style="left:80px;top:40px; height:420px;">
+  <div class="window" id="win-concepto" style="left:80px;top:40px;">
     <div class="titlebar"><div class="title">Concepto</div><div class="controls"><div class="btn close">X</div></div></div>
-    <div class="content">
+    <div class="content" style="height:420px; padding:0;">
       <h2>Concepto de Cáncer de Colon</h2>
       <img class="content-img" src="https://www.redaccionmedica.com/images/enfermedades/cancer-colon.jpg" alt="Colon"/>
       <p>El <strong>cáncer de colon</strong> es una enfermedad en la que células anormales en el colon o recto se multiplican sin control. Generalmente comienza con pólipos que, si no se detectan, pueden transformarse en tumores malignos.</p>
+      <p><strong>Síntomas más comunes:</strong></p>
       <ul>
         <li>Cambios en los hábitos intestinales.</li>
-        <li>Sangrado rectal o heces oscuras.</li>
+        <li>Sangrado rectal o heces con sangre.</li>
         <li>Dolor abdominal persistente.</li>
-        <li>Pérdida de peso sin explicación.</li>
+        <li>Pérdida de peso inexplicada.</li>
       </ul>
+      <p><strong>Factores de riesgo:</strong> Edad avanzada, antecedentes familiares, dieta pobre en fibra, obesidad, sedentarismo y enfermedades inflamatorias intestinales.</p>
+      <p><strong>Tratamientos:</strong> Cirugía, quimioterapia, radioterapia y terapias dirigidas. La detección temprana mejora el pronóstico.</p>
     </div>
     <div class="statusbar">Información ampliada</div>
   </div>
 
-  <div class="window" id="win-prevencion" style="left:120px;top:70px; height:420px;">
+  <div class="window" id="win-prevencion" style="left:120px;top:70px;">
     <div class="titlebar"><div class="title">Prevención</div><div class="controls"><div class="btn close">X</div></div></div>
-    <div class="content" style="padding:0;">
+    <div class="content" style="height:420px; padding:0;">
       <iframe class="embedded-iframe" src="Paginaprevencion.html" title="Prevención - Cáncer de Colon"></iframe>
     </div>
     <div class="statusbar">Consejos de prevención</div>
   </div>
 
-  <div class="window" id="win-receta" style="left:220px;top:110px; height:380px;">
-    <div class="titlebar"><div class="title">Receta Saludable</div><div class="controls"><div class="btn close">X</div></div></div>
-    <div class="content">
-      <h2>Ensalada de Quinoa</h2>
+  <div class="window" id="win-receta" style="left:220px;top:110px;">
+    <div class="titlebar"><div class="title">Recetas Saludables</div><div class="controls"><div class="btn close">X</div></div></div>
+    <div class="content" style="height:420px; padding:0;">
+      <h2>Recetas Saludables</h2>
+      <h3>Ensalada de Quinoa</h3>
       <img class="content-img" src="https://danzadefogones.com/wp-content/uploads/2024/08/ensalada-de-quinoa-facil.jpg" alt="Ensalada de quinoa"/>
-      <p>Una receta nutritiva, rica en fibra y antioxidantes.</p>
-      <h3>Ingredientes:</h3>
       <ul>
-        <li>1 taza de quinoa cocida</li>
-        <li>1 pepino en cubos</li>
-        <li>2 tomates medianos</li>
-        <li>1 zanahoria rallada</li>
+        <li>Quinoa cocida</li>
+        <li>Pepino</li>
+        <li>Tomate</li>
+        <li>Zanahoria rallada</li>
       </ul>
+      <p>Aliñar con aceite de oliva y limón.</p>
+
+      <h3>Sopa de Verduras</h3>
+      <img class="content-img" src="https://www.infobae.com/new-resizer/0adopMt5UGHMh3EszoA8M4TXUbk=/arc-anglerfish-arc2-prod-infobae/public/UCUP4YZ6PZGBHDTQQAD7I3VOYY.jpg" alt="Sopa de verduras"/>
+      <ul>
+        <li>Zanahoria</li>
+        <li>Calabacín</li>
+        <li>Papa</li>
+        <li>Apio</li>
+      </ul>
+      <p>Hervir con caldo de verduras y condimentar al gusto.</p>
+
+      <h3>Pechuga de Pollo a la Plancha</h3>
+      <img class="content-img" src="https://www.lafallera.es/wp-content/uploads/2024/09/acompanar-pollo-plancha.jpg" alt="Pollo a la plancha"/>
+      <ul>
+        <li>Pechuga de pollo</li>
+        <li>Especias</li>
+        <li>Aceite de oliva</li>
+      </ul>
+      <p>Cocinar a la plancha hasta dorar por ambos lados.</p>
     </div>
-    <div class="statusbar">Receta ampliada</div>
+    <div class="statusbar">Varias recetas</div>
   </div>
 
-  <div class="window" id="win-recursos" style="left:320px;top:160px; height:360px;">
+  <div class="window" id="win-recursos" style="left:320px;top:160px;">
     <div class="titlebar"><div class="title">Recursos</div><div class="controls"><div class="btn close">X</div></div></div>
-    <div class="content">
-      <h2>Recursos útiles</h2>
-      <img class="content-img" src="https://i.pinimg.com/736x/88/a7/1f/88a71f20286b494090606187260110f7.jpg" alt="Recursos"/>
-      <ul>
-        <li><a href="https://www.who.int" target="_blank">OMS</a></li>
-        <li><a href="https://www.cancer.org" target="_blank">American Cancer Society</a></li>
-        <li><a href="https://www.cdc.gov" target="_blank">CDC</a></li>
-      </ul>
+    <div class="content" style="height:420px; padding:0;">
+      <h2>Recursos sobre el Cáncer de Colon</h2>
+      <img class="content-img" src="https://www.mienfermeraperu.com/uploads/4/5/3/7/4537905/c-ncer-estad-stica-2002-2025_1_orig.jpg" alt="Estadísticas cáncer de colon"/>
+      <p>El <strong>cáncer de colon</strong>, o cáncer colorrectal, es un tipo de cáncer muy común que afecta al intestino grueso y el recto, atacando toda la extensión del mismo.</p>
+      <p>Este es uno de los tipos de cáncer más agresivos y fatales que se conocen, ya que es muy difícil de diagnosticar en su estado inicial. Los cánceres colorrectales se desarrollan lentamente a lo largo de los años.</p>
+      <p>El riesgo de padecer cáncer de colon es de <strong>4.50% en varones</strong> y <strong>4.15% en mujeres</strong>, según la OMS. Es decir, <strong>una de cada veintidós personas</strong> es propensa a sufrir de este mal.</p>
     </div>
-    <div class="statusbar">Enlaces oficiales</div>
+    <div class="statusbar">Información estadística</div>
   </div>
 
-  <div class="window" id="win-cita" style="left:180px;top:200px; height:320px;">
+  <div class="window" id="win-cita" style="left:180px;top:200px;">
     <div class="titlebar"><div class="title">CITA</div><div class="controls"><div class="btn close">X</div></div></div>
-    <div class="content">
+    <div class="content" style="height:420px; padding:0;">
       <video controls width="100%">
         <source src="cita.mp4" type="video/mp4">
       </video>
     </div>
-    <div class="statusbar">Video</div>
+    <div class="statusbar">Reproducción</div>
   </div>
 
-  <div class="window" id="win-fuentes" style="left:400px;top:220px; height:300px;">
+  <div class="window" id="win-fuentes" style="left:400px;top:220px;">
     <div class="titlebar"><div class="title">Fuentes</div><div class="controls"><div class="btn close">X</div></div></div>
     <div class="content">
+      <h2>Fuentes de información</h2>
       <ul>
-        <li><a href="https://www.who.int" target="_blank">OMS</a></li>
+        <li><a href="https://www.who.int" target="_blank">OMS: Organización Mundial de la Salud</a></li>
         <li><a href="https://www.cancer.org" target="_blank">American Cancer Society</a></li>
         <li><a href="https://www.cdc.gov" target="_blank">CDC</a></li>
-        <li><a href="https://www.redaccionmedica.com" target="_blank">Redacción Médica</a></li>
-        <li><a href="https://danzadefogones.com" target="_blank">Danza de Fogones</a></li>
+        <li><a href="https://www.redaccionmedica.com" target="_blank">Redacción Médica: Concepto del cáncer de colon</a></li>
+        <li><a href="https://danzadefogones.com" target="_blank">Receta quinoa</a></li>
+        <li><a href="https://www.mienfermeraperu.com/blog/cancer-de-colon-que-es-y-como-se-presenta" target="_blank">Blog: Mienfermera Perú</a></li>
+        <li><a href="https://www.youtube.com/watch?v=AKlrIwKj0Do" target="_blank">Música de fondo (YouTube)</a></li>
       </ul>
     </div>
     <div class="statusbar">Referencias</div>
   </div>
 
+  <!-- NUEVA VENTANA Libro Virtual -->
+  <div class="window" id="win-flippingbook" style="left:150px;top:100px; width:800px; height:600px;">
+    <div class="titlebar">
+      <div class="title">Libro Virtual</div>
+      <div class="controls"><div class="btn close">X</div></div>
+    </div>
+    <div class="content" style="padding:0;">
+      <iframe 
+        class="embedded-iframe big-book"
+        src="https://online.flippingbook.com/view/435801761/" 
+        title="FlippingBook Recursos">
+      </iframe>
+    </div>
+    <div class="statusbar">Visualización del libro</div>
+  </div>
+
   <!-- Barra de tareas -->
   <div class="taskbar">
-    <div class="start" id="startBtn"> 
-      <img src="https://win98icons.alexmeub.com/icons/png/windows-0.png"/> 
-      <strong>Inicio</strong>
-    </div>
+    <div class="start" id="startBtn"> <img src="https://win98icons.alexmeub.com/icons/png/windows-0.png"/> <strong>Inicio</strong></div>
     <div class="task-buttons" id="taskButtons"></div>
     <div class="clock" id="clock">00:00</div>
   </div>
 
-  <!-- Música de fondo -->
+  <!-- 🎶 Música de fondo en una esquina -->
   <iframe 
     width="200" height="120" 
     src="https://www.youtube.com/embed/AKlrIwKj0Do?autoplay=1&loop=1&playlist=AKlrIwKj0Do" 
@@ -138,6 +179,10 @@
     allow="autoplay" 
     style="position:fixed; bottom:50px; right:10px; z-index:999;">
   </iframe>
+
+  <script src="index.js"></script>
+</body>
+</html>
 
   <script src="index.js"></script>
 </body>

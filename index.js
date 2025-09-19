@@ -1,3 +1,18 @@
+// Función para quitar la pantalla de introducción
+function removeIntro(){
+  const intro = document.getElementById('intro-screen');
+  if(intro){
+    intro.style.display = 'none';
+  }
+}
+
+// Se ejecuta al cargar la página
+window.addEventListener("load", ()=>{
+  // El video dura ~5 segundos (puedes ajustarlo)
+  setTimeout(removeIntro, 6000);
+});
+
+
 // reproducir sonido
 function playSound(id) {
   const el=document.getElementById(id);
@@ -20,22 +35,13 @@ updateClock(); setInterval(updateClock,1000*30);
 function makeDraggable(win){
   const title=win.querySelector('.titlebar');
   let offsetX=0,offsetY=0,dragging=false;
-  title.addEventListener('mousedown',(e)=>{
-    dragging=true;
-    offsetX=e.clientX-win.offsetLeft;
-    offsetY=e.clientY-win.offsetTop;
-    win.style.zIndex=Date.now();
-  });
-  document.addEventListener('mousemove',(e)=>{
-    if(!dragging) return;
-    win.style.left=(e.clientX-offsetX)+'px';
-    win.style.top=(e.clientY-offsetY)+'px';
-  });
+  title.addEventListener('mousedown',(e)=>{dragging=true; offsetX=e.clientX-win.offsetLeft; offsetY=e.clientY-win.offsetTop; win.style.zIndex=Date.now();});
+  document.addEventListener('mousemove',(e)=>{ if(!dragging) return; win.style.left=(e.clientX-offsetX)+'px'; win.style.top=(e.clientY-offsetY)+'px'; });
   document.addEventListener('mouseup',()=>{dragging=false});
 }
 document.querySelectorAll('.window').forEach(makeDraggable);
 
-// abrir ventana con doble clic
+// abrir ventana
 document.querySelectorAll('.icon').forEach(ic=>{
   ic.addEventListener('dblclick',()=>{
     const app=ic.dataset.app;
