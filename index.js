@@ -50,3 +50,14 @@ function attachCloseButtons(){
   });
 }
 attachCloseButtons();
+
+// Ocultar pantalla de inicio cuando termine el video
+document.addEventListener("DOMContentLoaded", () => {
+  const bootVideo = document.getElementById("boot-video");
+  const bootScreen = document.getElementById("boot-screen");
+  if (bootVideo) {
+    bootVideo.onended = () => {
+      bootScreen.style.display = "none";
+    };
+  }
+});
