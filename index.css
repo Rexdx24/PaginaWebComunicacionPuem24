@@ -148,9 +148,18 @@ img.content-img{
 .embedded-iframe{width:100%;height:100%;border:0}
 .big-book{width:100%;height:100%}
 
-/* Texto justificado en Concepto */
+/* Justificar textos en ventanas específicas */
 #win-concepto .content p,
-#win-concepto .content ul {
+#win-concepto .content ul,
+#win-receta .content p,
+#win-receta .content ul,
+#win-recursos .content p,
+#win-recursos .content ul,
+#win-cita .content p,
+#win-cita .content ul {
+  text-align: justify;
+}
+
   text-align: justify;
 }
 
