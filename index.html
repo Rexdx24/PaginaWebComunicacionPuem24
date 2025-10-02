@@ -7,6 +7,15 @@
 <link rel="stylesheet" href="index.css" />
 </head>
 <body>
+
+  <!-- Pantalla de inicio estilo Windows -->
+<div id="boot-screen" style="position:fixed;top:0;left:0;width:100%;height:100%;background:#000;z-index:2000;display:flex;align-items:center;justify-content:center;">
+  <video id="boot-video" autoplay>
+    <source src="boot.mp4" type="video/mp4">
+    Tu navegador no soporta video en HTML5.
+  </video>
+</div>
+  
   <!-- Sonidos -->
   <audio id="sound-start" src="startup.wav"></audio>
   <audio id="sound-click" src="click.wav"></audio>
