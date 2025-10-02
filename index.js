@@ -48,16 +48,23 @@ function attachCloseButtons(){
       if(win){ win.style.display='none'; playSound("sound-close"); }
     }
   });
-}
-attachCloseButtons();
 
 // Ocultar pantalla de inicio cuando termine el video
 document.addEventListener("DOMContentLoaded", () => {
   const bootVideo = document.getElementById("boot-video");
   const bootScreen = document.getElementById("boot-screen");
+
   if (bootVideo) {
-    bootVideo.onended = () => {
+    // Cuando termina el video
+    bootVideo.addEventListener("ended", () => {
       bootScreen.style.display = "none";
-    };
+    });
+
+    // Por seguridad, lo ocultamos también tras X segundos
+    setTimeout(() => {
+      bootScreen.style.display = "none";
+    }, 10000); // 10 segundos máximo
   }
 });
+}
+attachCloseButtons();
